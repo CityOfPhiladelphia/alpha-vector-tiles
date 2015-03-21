@@ -34,9 +34,9 @@
 
 // Common Colors //
 
-@land: @white;
-@water: @ben-franklin-blue;
-@accent: @bell-yellow;
+@land: #fff;
+@water: #027ea4;
+@accent: #f2ba13;
 
 // Constants //
 
