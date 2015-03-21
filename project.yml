@@ -1,0 +1,39 @@
+_prefs: 
+  mapid: laurenancona.17ea14c3
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://twitter.com/laurenancona' target='_blank'>Lauren Ancona</a> | <a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -75.1635
+  - 39.9513
+  - 15
+description: Mappy goodness  in the style of alpha.phila.gov
+format: jpeg80
+interactivity_layer: poi_label
+layers: null
+maxzoom: 22
+minzoom: 12
+name: Malpha
+source: "mapbox:///mapbox.mapbox-streets-v5,mapbox.mapbox-terrain-v2,laurenancona.697zm2t9,laurenancona.06ublnmi"
+styles: 
+  - style.mss
+  - labels.mss
+  - roads.mss
+template: |-
+  <strong>{{name}}</strong>
+  {{#type}}
+  <br /><small>{{type}}</small>
+  {{/type}}
+  {{#address}}
+  <br /><small>{{address}}</small>
+  {{/address}}
+   {{#website}}
+  <br /><small>{{website}}</small>
+  {{/website}}
