@@ -1,7 +1,7 @@
 #alpha-vector-tiles
 
 Draft working style for applying alpha.phila.gov [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) styles to vector tiles.
-
+[thumb]:(http://github.com/CityofPhiladelphia/alpha-vector-tiles/images/thumb.png)
 ##To use
  - Clone repository to local machine
  - Open Mapbox Studio
