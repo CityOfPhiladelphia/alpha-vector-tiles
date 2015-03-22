@@ -10,7 +10,7 @@
 @mine-shaft: #353535;
 @black: #000000;
 
-// Roads
+// Roads //
 
 #road_label[zoom>=16] {
   text-name: @name;
@@ -20,10 +20,9 @@
   text-halo-radius: 2;
   text-placement: line;
   text-avoid-edges: true;
-  text-repeat-distance: 10;
 }
 
-#poi_label [zoom>=17]{
+#poi_label [zoom>=18]{
   text-name: @name;
   text-face-name: @sans_italic;
   text-size: 9;
@@ -32,6 +31,34 @@
   text-fill: @mine-shaft;
   text-halo-fill: #FFF;
   text-halo-radius: 0.5; 
+}
+
+// Water //
+
+#waterway_label {
+  }
+
+#water_label,#waterway_label {
+  [zoom<=13],  // automatic area filtering @ low zooms
+  [zoom>=14][area>500000],
+  [zoom>=16][area>10000],
+  [zoom>=17] {
+    text-name: @name;
+    text-face-name: @sans_italic;
+    text-fill: lighten(@water, 80%);
+    text-halo-fill: @manatee;
+    text-halo-radius: 1;
+    text-size: 12;
+    text-wrap-width: 100;
+    text-wrap-before: true;
+  }
+  [class='river'] {
+  text-name: @name;
+  text-fill: lighten(@water, 80%);
+  text-size: 10;
+  text-placement: line;
+  text-face-name: @sans_italic;
+  }
 }
 
 // Exceptions //
@@ -50,8 +77,6 @@
   text-halo-fill: #FFF;
   text-halo-radius: 0.5; 
 }
-
-
 
 // Places //
 
@@ -81,6 +106,7 @@
     text-name: @name;
     text-face-name: 'Montserrat Bold';
     text-transform: uppercase;
+    text-character-spacing: 3;
     text-fill: @mine-shaft;
     text-halo-fill: #FFF;
     text-halo-radius: 2;
@@ -96,7 +122,7 @@
     text-fill: @mine-shaft;
     text-transform: uppercase;
     text-halo-fill: #FFF;
-    text-halo-radius: 1;
+    text-halo-radius: 2;
     text-size: 14;
     [zoom>=10] { text-size: 14; }
     [zoom>=12] { text-size: 16; }
@@ -125,4 +151,11 @@
     [zoom>=14] { text-size: 12; }
     [zoom>=16] { text-size: 13; }
   }
+}
+
+ #philadelphiacurbedges201201 {
+  text-name: ['OBJECTID'];
+  text-face-name: @sans_italic;
+  text-size: 8;
+  text-fill: @ghost-gray;
 }

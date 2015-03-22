@@ -12,9 +12,14 @@
 
 // Roads & Railways //
 
-#tunnel { opacity: 0.5;
-    line-dasharray: 4,1;  
-}
+#tunnel { opacity: 0.4;
+    line-dasharray: 4,2;  
+    [type='subway'] { [zoom>=18] {
+      line-width: 7;
+      line-color: @manatee;
+      line-dasharray: 2,2; }
+    }
+  }
 
 #road,
 #tunnel,
@@ -37,6 +42,11 @@
       [zoom>=16] { line-width: 2; }
     }
     [class='street_limited'] { line-dasharray: 4,1; }
+    [class='path'] { [zoom>=18] {
+      line-width: 7;
+      line-color: @whitesmoke;
+      line-dasharray: 2,2; }
+    }
   }
 }
 

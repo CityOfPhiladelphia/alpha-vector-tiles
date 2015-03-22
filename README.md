@@ -1,5 +1,5 @@
-#alpha-vector-tiles
-
+alpha-vector-tiles
+============================
 Draft working style for applying alpha.phila.gov [pattern portfolio](http://cityofphiladelphia.github.io/patterns/) styles to vector tiles.
 
 ![thumb](https://raw.githubusercontent.com/CityOfPhiladelphia/alpha-vector-tiles/master/images/thumb.png)

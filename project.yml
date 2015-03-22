@@ -11,17 +11,17 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -75.1635
-  - 39.9513
-  - 15
+  - -75.1176
+  - 39.9529
+  - 14
 description: Mappy goodness  in the style of alpha.phila.gov
 format: jpeg80
 interactivity_layer: poi_label
 layers: null
-maxzoom: 22
+maxzoom: 20
 minzoom: 12
 name: Malpha
-source: "mapbox:///mapbox.mapbox-streets-v5,mapbox.mapbox-terrain-v2,laurenancona.697zm2t9,laurenancona.06ublnmi"
+source: "mapbox:///mapbox.mapbox-streets-v5,laurenancona.g78hbyb9,laurenancona.06ublnmi"
 styles: 
   - style.mss
   - labels.mss

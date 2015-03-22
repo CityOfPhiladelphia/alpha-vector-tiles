@@ -65,20 +65,6 @@ Map { background-color: @land;
   polygon-gamma: 0.6;
 }
 
-#water_label {
-  [zoom<=13],  // automatic area filtering @ low zooms
-  [zoom>=14][area>500000],
-  [zoom>=16][area>10000],
-  [zoom>=17] {
-    text-name: @name;
-    text-face-name: 'Montserrat Regular';
-    text-fill: darken(@water, 30%);
-    text-size: 13;
-    text-wrap-width: 100;
-    text-wrap-before: true;
-  }
-}
-
 #waterway {
   [type='river'],
   [type='canal'] {
@@ -99,7 +85,7 @@ Map { background-color: @land;
 
 // Curbs //
 
-#curbprj [zoom>=16] {
+#philadelphiacurbedges201201 [zoom>=16] {
    line-color: @geyser;
    line-opacity: 1;
 }
@@ -123,7 +109,7 @@ Map { background-color: @land;
   polygon-fill: @bell-yellow;
 }
 
-// Park //
+// Landuse //
 
 #landuse [class='park'] {
 //   polygon-fill: @bell-yellow;
